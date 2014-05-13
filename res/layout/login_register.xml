@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wifiRegisterPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_skin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wifireg_TV_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/wifireg_title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/wifireg_noNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7fC4D8E6"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noNetworkInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/noNetworkTitle"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/wifireg_noNetworkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_close_green"
+            android:text="@string/noNetworkBtn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_isnull"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#DE1010" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_newName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/wifireg_ET_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextshap"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_isnull"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#DE1010" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_newPassword"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/wifireg_ET_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextshap"
+                android:inputType="textPassword"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_isnull"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#DE1010" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_msPassword"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/wifireg_ET_msPass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextshap"
+                android:inputType="textPassword"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_isnull"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#DE1010" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_email"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/wifireg_ET_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittextshap"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip" />
+
+            <TextView
+                android:id="@+id/moreTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_btn_tv"
+                android:drawableRight="@drawable/v5_3_0_profile_arrow_back"
+                android:padding="5dp"
+                android:text="@string/wifireg_more"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:id="@+id/moreLL"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifireg_isnull"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#DE1010"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifireg_cName"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/wifireg_ET_cName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextshap"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_eName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/wifireg_ET_eName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextshap"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="10dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifireg_isnull"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#DE1010"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifireg_phone1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/wifireg_ET_tel1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextshap"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_phone2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/wifireg_ET_tel2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextshap"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="10dip" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifireg_isnull"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#DE1010"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wifireg_homeAddress"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/wifireg_ET_homeAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextshap"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifireg_officeAddress"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/wifireg_ET_officeAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittextshap"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingTop="10dip" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/wifireg_Btn_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonshap"
+                android:text="@string/wifireg_submitBtn" />
+
+            <Button
+                android:id="@+id/wifireg_Btn_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonshap"
+                android:text="@string/wifireg_cancelBtn" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

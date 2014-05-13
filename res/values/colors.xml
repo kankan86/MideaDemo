@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="radiobg_press">#43859d</color>
+    <color name="radiobg_normal">#555555</color>
+    <color name="role_item_sel">#2E2EFE</color>
+    <color name="role_item_nor">#00000000</color>
+    <color name="delete_color_filter">#A5FF0000</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ffff22</color>
+    <color name="panel_slip">#7fcccccc</color>
+    <color name="panel_light">#ffff22</color>
+    
+    <color name="jsxtemp_slip">#6fffffff</color>
+    <color name="yyxset_slip">#6fffffff</color>
+    
+    <color name="setBack">#df302E2E</color>
+    
+	<color name="closeColor">#ff808080</color>
+	<color name="openColor">#ffffffff</color>
+	<color name="heatingColor">#ffFFFF22</color>
+	<color name="heatTagOpenColor">#ff000000</color>
+	<color name="shadowColor">#ff4d4d4d</color>
+	
+	<color name="btnTVDown">#173B72</color>
+	<color name="btnTVUp">#00ffffff</color>
+</resources>

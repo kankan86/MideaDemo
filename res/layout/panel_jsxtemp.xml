@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_jsxtemp"
+    android:orientation="vertical"
+    android:padding="@dimen/jsxtemp_paddingBottom"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/jsxtemp_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head"
+        android:padding="@dimen/jsxtemp_headPadding" >
+
+        <LinearLayout
+            android:id="@+id/jsxtemp_slipLL"
+            android:layout_width="@dimen/jsxtemp_headslipWidth"
+            android:layout_height="@dimen/jsxtemp_headslipHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/jsxtemp_headslipRight"
+            android:layout_toLeftOf="@+id/jsxtemp_savebtn"
+            android:background="@color/jsxtemp_slip" />
+
+        <TextView
+            android:id="@+id/jsxtemp_savebtn"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/jsxtemp_save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/jsxtemp_headSaveSize"
+            android:background="@drawable/bg_btn_tv"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_yyxset"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/jsxtemp_upBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/up" />
+
+            <LinearLayout
+                android:id="@+id/jsxtemp_tempvalueLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/jsxtemp_tempvalue_TV"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/jsxtemp_tempValue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/jsxtemp_valueSize"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/jsxtemp_tempvalue_ET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_setnum"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:padding="5dp"
+                    android:text="@string/jsxtemp_tempValue"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/jsxtemp_valueSize"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/jsxtemp_downBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jsxtemp_temptag"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/jsxtemp_tagPaddingBottom"
+            android:text="@string/jsxtemp_tempTag"
+            android:textColor="@color/white"
+            android:textSize="@dimen/jsxtemp_tagSize" />
+    </LinearLayout>
+
+</LinearLayout>

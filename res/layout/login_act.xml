@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actvationPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/act_TV_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="@string/act_title1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#3b81e1"
+        android:textSize="@dimen/act_welcom_textsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/act_TV_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/act_title2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="@dimen/act_title_textsize"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/act_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/act_ET_actCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="@string/act_textstr"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip"
+            android:background="@drawable/edittextshap" >
+        </EditText>
+
+        <Button
+            android:id="@+id/act_Btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:paddingBottom="-5dip"
+            android:paddingTop="-5dip"
+            android:text="@string/act_btnstr"
+            android:textColor="#000000"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            android:background="@drawable/buttonshap" />
+    </LinearLayout>
+
+</LinearLayout>

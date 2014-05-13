@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setErrPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_skin"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setErrHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/setErrBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/v5_3_0_profile_arrow_back_l" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/set_err"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seterr_noNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7fC4D8E6"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noNetworkInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/noNetworkTitle"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/seterr_noNetworkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_close_green"
+            android:text="@string/noNetworkBtn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#8f000000"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="故障现象"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="原因"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="处理方法"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="150dp" >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="150dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/bg_textview"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="室内"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="1、手机和热水器无法建立连接\n2、云智能功能无法进行信息同步"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="1、室内无线路由器工作异常"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="2、无线路由器距离太远，信号太弱"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="3、热水器被切断电源，工作异常"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="检查无限路由器工作设置情况"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="调整无线路由器安装位置"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="接通热水器电源，重新进行连接"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="600dp" >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="600dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/bg_textview"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="室外"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="1、手机无法登陆"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="2、手机和热水器无法建立连接"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="600dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="1、网络连接异常"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="2、用户名及密码错误"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="1、网络连接异常"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="2、家中无线路由器工作异常"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="3、无线路由器距离太远，信号太弱"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="4、热水器被切断电源，工作异常"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="600dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="检查所在地WIFI或2G/3G网络信号源是否正常"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="第一次使用请参照提示进行注册；检查用户名和密码输入是否正确"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="检查所在地WIFI或2G/3G网络信号源是否正常"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="检查无限路由器工作设置情况"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="调整无线路由器安装位置"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="接通热水器电源，重新进行连接"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="100dp" >
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="插上电源屏幕上无任何显示"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="1、电源故障"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="2、限温器动作\n3、电脑板故障"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="检查是否停电"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="通知专业人员维修"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="显示E1"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="可能有漏电现象"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="拔掉电源线插头5分钟，重新插上电源，如故障仍无法解决，通知专业人员维修"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="0.0dip"
+                    android:layout_height="150dp" >
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="显示E2"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="内胆中缺水，加热器干烧"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="1、拔掉电源插头，打开进水阀向内胆注满水"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="2、重新插上电源，如故障仍无法解决，通知专业人员维修"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="显示E3"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="内胆水温可能超高"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="拔掉电源线插头5分钟，重新插上电源，如故障仍无法解决，通知专业人员维修"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="显示E4"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="传感器故障"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="拔掉电源线插头5分钟，重新插上电源，如故障仍无法解决，通知专业人员维修"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="300dp" >
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="300dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/bg_textview"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="出水为冷水"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="显示屏无显示"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="加热不到要求温度或出热水量少"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="300dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="1、停电"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="2、温控器误动作"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="1、当前设置温度偏低"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="2、混水阀故障"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="3、电路板故障"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="300dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="等待通电"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="通知专业人员维修"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="将设置温度适当调高加热一段时间"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="调节混水阀"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_textview"
+                                android:padding="3dp"
+                                android:text="通知专业人员维修"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="300dp" >
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="300dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="不出热水"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="300dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="1、自来水停水"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="2、自来水进水阀关闭"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="3、水压太低"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="4、混水阀故障"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="300dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="等待自来水供水恢复正常"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="打开进水阀"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="等待水压恢复正常"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="通知专业人员维修"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="漏水"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="各管口连接位置密封不好"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="通知专业人员维修"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="100dp" >
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="0.0dip"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_textview"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="防电墙指示灯亮"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="1、地线带电"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="2、产品漏电且地线断开"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_textview"
+                            android:padding="3dp"
+                            android:text="立即停止使用并通知专业人员维修"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

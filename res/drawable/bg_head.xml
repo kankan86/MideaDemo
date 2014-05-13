@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:maxLevel="0">
+        <shape>
+            <gradient
+                android:angle="270.0"
+                android:centerColor="#77B4DD"
+                android:endColor="#69ADDA"
+                android:startColor="#4E9ED3" />
+        </shape>
+    </item>
+    <item android:maxLevel="1">
+        <shape>
+            <gradient
+                android:angle="270.0"
+                android:centerColor="#4995C8"
+                android:endColor="#7DB3D8"
+                android:startColor="#3884B7" />
+        </shape>
+    </item>
+    <item android:maxLevel="2">
+        <shape>
+            <gradient
+                android:angle="270.0"
+                android:centerColor="#EBA948"
+                android:endColor="#F3CD94"
+                android:startColor="#D78A18" />
+        </shape>
+    </item>
+
+</level-list>

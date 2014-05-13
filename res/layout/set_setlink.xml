@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_skin"
+    android:orientation="vertical"
+    android:id="@+id/setLinkPage" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head"
+        android:orientation="horizontal"
+        android:padding="@dimen/setpage_headPadding"
+        android:id="@+id/setLinkHead" >
+
+        <ImageView
+            android:id="@+id/setLinkBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setpage_backLeft"
+            android:src="@drawable/v5_3_0_profile_arrow_back_l" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/set_link"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setpage_titleSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/setpage_llLeft"
+        android:layout_marginRight="@dimen/setpage_llRight"
+        android:layout_marginTop="@dimen/setpage_llTop"
+        android:background="@drawable/popwindowshape"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/setLinkWIFITV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/setlink_wifi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sethelp_tv" />
+
+            <ImageView
+                android:id="@+id/setLinkWIFIImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/radbtn_nosel" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/set_slipLL1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setlink_slipHeight"
+            android:layout_marginTop="@dimen/setlink_slipTop"
+            android:background="@color/panel_slip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/setLink3GTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/setlink_3g"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sethelp_tv" />
+
+            <ImageView
+                android:id="@+id/setLink3GImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/radbtn_nosel" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

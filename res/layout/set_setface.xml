@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setFacePage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_skin"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setFaceHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head"
+        android:orientation="horizontal"
+        android:padding="@dimen/setpage_headPadding" >
+
+        <ImageView
+            android:id="@+id/setFaceBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setpage_backLeft"
+            android:src="@drawable/v5_3_0_profile_arrow_back_l" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/set_face"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setpage_titleSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setface_noNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7fC4D8E6"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noNetworkInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/noNetworkTitle"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/setface_noNetworkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_close_green"
+            android:text="@string/noNetworkBtn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setpage_llLeft"
+        android:layout_marginRight="@dimen/setpage_llRight"
+        android:layout_marginTop="@dimen/setpage_llTop"
+        android:background="@drawable/bg_white"
+        android:gravity="center"
+        android:padding="@dimen/setpage_llPadding" >
+
+        <ImageView
+            android:id="@+id/faceImg0"
+            android:layout_width="@dimen/setface_imgWidth"
+            android:layout_height="@dimen/setface_imgHeight"
+            android:layout_marginTop="@dimen/setface_imgTop"
+            android:src="@drawable/face0" />
+
+        <ImageView
+            android:id="@+id/faceImg1"
+            android:layout_width="@dimen/setface_imgWidth"
+            android:layout_height="@dimen/setface_imgHeight"
+            android:layout_marginTop="@dimen/setface_imgTop"
+            android:src="@drawable/face1" />
+
+        <ImageView
+            android:id="@+id/faceImg2"
+            android:layout_width="@dimen/setface_imgWidth"
+            android:layout_height="@dimen/setface_imgHeight"
+            android:layout_marginTop="@dimen/setface_imgTop"
+            android:src="@drawable/face2" />
+    </LinearLayout>
+
+</LinearLayout>

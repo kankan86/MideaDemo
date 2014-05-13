@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setVersionPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_skin"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setVersionHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head"
+        android:orientation="horizontal"
+        android:padding="@dimen/setpage_headPadding" >
+
+        <ImageView
+            android:id="@+id/setVersionBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setpage_backLeft"
+            android:src="@drawable/v5_3_0_profile_arrow_back_l" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/set_version"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setpage_titleSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setversion_noNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7fC4D8E6"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noNetworkInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/noNetworkTitle"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/setversion_noNetworkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_close_green"
+            android:text="@string/noNetworkBtn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setpage_llLeft"
+        android:layout_marginRight="@dimen/setpage_llRight"
+        android:layout_marginTop="@dimen/setpage_llTop"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView_version_curName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setversion_curNameLeft"
+            android:layout_marginTop="@dimen/setversion_curNameTop"
+            android:text="@string/version_curname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/setversion_tv" />
+
+        <TextView
+            android:id="@+id/textView_version_curValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_version_curName"
+            android:layout_marginLeft="@dimen/setversion_curValueLeft"
+            android:text="@string/version_curvalue"
+            android:textColor="@color/black"
+            android:textSize="@dimen/setversion_tv" />
+
+        <LinearLayout
+            android:id="@+id/set_versionSlipLL1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setversion_splitHeight"
+            android:layout_below="@+id/textView_version_curValue"
+            android:layout_marginTop="@dimen/setversion_splitTop"
+            android:background="@color/panel_slip" />
+
+        <TextView
+            android:id="@+id/textView_version_newName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_versionSlipLL1"
+            android:layout_marginLeft="@dimen/setversion_newNameLeft"
+            android:layout_marginTop="@dimen/setversion_newNameTop"
+            android:text="@string/version_newname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/setversion_tv" />
+
+        <TextView
+            android:id="@+id/textView_version_newValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_version_newName"
+            android:layout_marginLeft="@dimen/setversion_newValueLeft"
+            android:text="@string/version_newvalue"
+            android:textColor="@color/black"
+            android:textSize="@dimen/setversion_tv" />
+
+        <Button
+            android:id="@+id/set_version_updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView_version_newValue"
+            android:layout_alignRight="@+id/set_versionSlipLL1"
+            android:layout_marginRight="@dimen/setversion_updateBtnRight"
+            android:background="@drawable/bg_btn_normal"
+            android:text="@string/version_foot"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setversion_updateBtnSize" />
+    </RelativeLayout>
+
+</LinearLayout>

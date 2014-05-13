@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wifiLoginPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/wifilogin_TV_title1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/wifilogin_title1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="@dimen/wifilogin_title1_textsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wifilogin_TV_title2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/wifilogin_title2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="@dimen/wifilogin_title2_textsize"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/wifilogin_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/wifilogin_ET_name"
+            android:background="@drawable/edittextshap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="@string/wifilogin_newName"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/wifilogin_ET_password"
+            android:background="@drawable/edittextshap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/wifilogin_newPassword"
+            android:inputType="textPassword"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/wifilogin_ET_msPass"
+            android:background="@drawable/edittextshap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/wifilogin_msPassword"
+            android:inputType="textPassword"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/wifilogin_CheBox_remNamePass"
+                style="@style/MyCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:text="@string/wifilogin_reNamePass"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/wifilogin_Btn_link"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/buttonshap"
+                android:paddingBottom="-5dip"
+                android:paddingTop="-5dip"
+                android:text="@string/wifilogin_linkBtn"
+                android:textColor="#000000"
+                android:textSize="@dimen/wifilogin_btn_textsize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/wifilogin_Btn_reg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/buttonshap"
+                android:paddingBottom="-5dip"
+                android:paddingTop="-5dip"
+                android:text="@string/wifilogin_regBtn"
+                android:textColor="#000000"
+                android:textSize="@dimen/wifilogin_btn_textsize"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/wifilogin_Btn_bind"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/buttonshap"
+                android:paddingBottom="-5dip"
+                android:paddingTop="-5dip"
+                android:text="@string/wifilogin_bindBtn"
+                android:textColor="#000000"
+                android:textSize="@dimen/wifilogin_btn_textsize"
+                android:textStyle="bold" />
+
+            <!-- <Button -->
+            <!-- android:id="@+id/wifilogin_Btn_reg" -->
+            <!-- android:layout_width="90dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="@string/wifilogin_regBtn" /> -->
+
+
+            <!-- <Button -->
+            <!-- android:id="@+id/wifilogin_Btn_logout" -->
+            <!-- android:layout_width="90dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="@string/wifilogin_logoutBtn" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

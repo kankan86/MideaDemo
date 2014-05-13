@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:paddingLeft">40.0dip</item>
+        <item name="android:maxHeight">10.0dip</item>
+    </style>
+
+    <style name="AudioFileInfoOverlayText">
+        <item name="android:shadowColor">#4d4d4d</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <style name="animStyleForHeating" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@anim/gif_heating</item>
+    </style>
+    
+    <style name="animStyleForSearch" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@anim/gif_searchwifi</item>
+    </style>
+
+    <!-- Activity主题 -->
+    <style name="activityTheme" parent="@android:style/Theme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

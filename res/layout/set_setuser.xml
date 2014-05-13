@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setUserPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_skin"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/setUserHead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head"
+        android:orientation="horizontal"
+        android:padding="@dimen/setpage_headPadding" >
+
+        <ImageView
+            android:id="@+id/setUserBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/setpage_backLeft"
+            android:src="@drawable/v5_3_0_profile_arrow_back_l" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/set_user"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setpage_titleSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setuser_noNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7fC4D8E6"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noNetworkInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/noNetworkTitle"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/setuser_noNetworkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_close_green"
+            android:text="@string/noNetworkBtn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/setpage_llLeft"
+        android:layout_marginRight="@dimen/setpage_llRight"
+        android:layout_marginTop="@dimen/setpage_llTop"
+        android:background="@drawable/bg_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/setpage_llPadding" >
+
+        <EditText
+            android:id="@+id/setuser_usernameET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setuser_editLeft"
+            android:layout_marginRight="@dimen/setuser_editRight"
+            android:layout_marginTop="@dimen/setuser_editTop"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/setuser_et_username" />
+
+        <EditText
+            android:id="@+id/setuser_oldpassET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setuser_editLeft"
+            android:layout_marginRight="@dimen/setuser_editRight"
+            android:layout_marginTop="@dimen/setuser_editTop"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/setuser_et_oldpass"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/setuser_newpassET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setuser_editLeft"
+            android:layout_marginRight="@dimen/setuser_editRight"
+            android:layout_marginTop="@dimen/setuser_editTop"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/setuser_et_newpass"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/setuser_mspassET"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setuser_editLeft"
+            android:layout_marginRight="@dimen/setuser_editRight"
+            android:layout_marginTop="@dimen/setuser_editTop"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/setuser_et_mspass"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/setuser_saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/setuser_btnBottom"
+            android:layout_marginTop="@dimen/setuser_btnTop"
+            android:background="@drawable/bg_btn_normal"
+            android:text="@string/setuser_et_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/setuser_btnSize" />
+    </LinearLayout>
+
+</LinearLayout>

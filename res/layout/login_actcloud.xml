@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actCloudPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/actCloud_TV_title2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/actcloud_title2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="@dimen/wifilogin_title2_textsize"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/actCloud_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/actCloud_ET_name"
+            android:background="@drawable/edittextshap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="@string/actcloud_newName"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/actCloud_ET_password"
+            android:background="@drawable/edittextshap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/actcloud_newPassword"
+            android:inputType="textPassword"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip" />
+
+        <EditText
+            android:id="@+id/actCloud_ET_msPass"
+            android:background="@drawable/edittextshap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="@string/actcloud_msPassword"
+            android:inputType="textPassword"
+            android:paddingBottom="10dip"
+            android:paddingLeft="5dip"
+            android:paddingTop="10dip"
+            android:textSize="18dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/actCloud_Btn_reg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/buttonshap"
+                android:paddingBottom="-5dip"
+                android:paddingTop="-5dip"
+                android:text="@string/actcloud_regBtn"
+                android:textColor="#000000"
+                android:textSize="@dimen/wifilogin_btn_textsize"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/actCloud_Btn_act"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/buttonshap"
+                android:paddingBottom="-5dip"
+                android:paddingTop="-5dip"
+                android:text="@string/actcloud_actBtn"
+                android:textColor="#000000"
+                android:textSize="@dimen/wifilogin_btn_textsize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

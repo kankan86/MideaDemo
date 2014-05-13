@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="act_welcom_textsize">28sp</dimen>
+    <dimen name="act_title_textsize">22sp</dimen>
+    
+    <dimen name="wifilogin_title1_textsize">22sp</dimen>
+    <dimen name="wifilogin_title2_textsize">22sp</dimen>
+    <dimen name="wifilogin_btn_textsize">18sp</dimen>
+    
+    <dimen name="login_btn_textsize">18sp</dimen>
+    <dimen name="register_btn_textsize">18sp</dimen>
+    
+    <dimen name="main_head">27sp</dimen>
+    
+    <dimen name="setlink_tv_title">25sp</dimen>
+    
+    <dimen name="setversion_tv_title">25sp</dimen>
+    <dimen name="setversion_tv">25sp</dimen>
+    
+    <dimen name="sethelp_tv">25sp</dimen>
+    
+    <dimen name="panel_headAndPanel">10dp</dimen>
+    <dimen name="panel_paddingLR">5dp</dimen>
+    <dimen name="panel_btnBottom">30dp</dimen>
+    <dimen name="panel_LLBottom">65dp</dimen>
+    
+    <dimen name="yyxset_tempTagTop">10dp</dimen>
+    
+    <dimen name="yyxset_headPadding">5dp</dimen>
+    <dimen name="yyxset_headCancleRight">5dp</dimen>
+    <dimen name="yyxset_headCancleSize">20dp</dimen>
+    <dimen name="yyxset_headSlipWidth">1dp</dimen>
+    <dimen name="yyxset_headSlipHeight">30dp</dimen>
+    <dimen name="yyxset_headSlipRight">5dp</dimen>
+    <dimen name="yyxset_headSaveSize">20dp</dimen>
+    <dimen name="yyxset_tempTitleSize">18dp</dimen>
+    <dimen name="yyxset_timeTitleSize">18dp</dimen>
+    <dimen name="yyxset_setTempPaddingBottom">5dp</dimen>
+    <dimen name="yyxset_setTempPaddingTop">5dp</dimen>
+    <dimen name="yyxset_setTempValueTop">10dp</dimen>
+    <dimen name="yyxset_setTempValueTVSize">60dp</dimen>
+    <dimen name="yyxset_setTempValueEditSize">60dp</dimen>
+    <dimen name="yyxset_setTempDownTop">10dp</dimen>
+    <dimen name="yyxset_setTempTagSize">30dp</dimen>
+    <dimen name="yyxset_setHourPaddingBottom">5dp</dimen>
+    <dimen name="yyxset_setHourPaddingTop">5dp</dimen>
+    <dimen name="yyxset_setHourValueTop">10dp</dimen>
+    <dimen name="yyxset_setHourValueTVSize">60dp</dimen>
+    <dimen name="yyxset_setHourValueEditSize">60dp</dimen>
+    <dimen name="yyxset_setHourDownTop">10dp</dimen>
+    <dimen name="yyxset_setHourTagSize">50dp</dimen>
+    <dimen name="yyxset_setMinuteValueTop">10dp</dimen>
+    <dimen name="yyxset_setMinuteValueTVSize">60dp</dimen>
+    <dimen name="yyxset_setMinuteValueEditSize">60dp</dimen>
+    <dimen name="yyxset_setMinuteDownTop">10dp</dimen>
+    <dimen name="yyxset_infoPaddingBottom">3dp</dimen>
+    <dimen name="yyxset_infoPaddingTop">5dp</dimen>
+    <dimen name="yyxset_infoSize">15dp</dimen>
+    <dimen name="yyxset_weekPadding">10dp</dimen>
+    <dimen name="yyxset_weekTitleSize">18dp</dimen>
+    <dimen name="yyxset_weekTop">5dp</dimen>
+    <dimen name="yyxset_weekSize">15dp</dimen>
+    <dimen name="yyxset_weekLoopTop">5dp</dimen>
+    <dimen name="yyxset_weekLoopSize">15dp</dimen>
+    
+    <dimen name="panel_headPaddingT">2dp</dimen>
+    <dimen name="panel_headPaddingB">2dp</dimen>
+    <dimen name="panel_headPaddingL">0dp</dimen>
+    <dimen name="panel_headPaddingR">8dp</dimen>
+    <dimen name="panel_openBtnSize">18dp</dimen>
+    <dimen name="panel_openBtnPaddingL">18dp</dimen>
+    <dimen name="panel_openBtnPaddingR">18dp</dimen>
+    <dimen name="panel_openBtnPaddingT">12dp</dimen>
+    <dimen name="panel_openBtnPaddingB">12dp</dimen>
+    <dimen name="panel_left">10dp</dimen>
+    <dimen name="panel_right">10dp</dimen>
+    <dimen name="panel_tempTitleSize">25dp</dimen>
+    <dimen name="panel_tempValueSize">60dp</dimen>
+    <dimen name="panel_tempTagSize">25dp</dimen>
+    <dimen name="panel_heatingTitleSize">20dp</dimen>
+    <dimen name="panel_stateTagTop">10dp</dimen>
+    <dimen name="panel_stateTempTitleSize">16dp</dimen>
+    <dimen name="panel_stateTempValueSize">20dp</dimen>
+    <dimen name="panel_stateTempTagSize">16dp</dimen>
+    <dimen name="panel_hotwarterTitleSize">20dp</dimen>
+    <dimen name="panel_hotwarterValueSize">25dp</dimen>
+    <dimen name="panel_split1Height">1dp</dimen>
+    <dimen name="panel_split1Top">10dp</dimen>
+    <dimen name="panel_cloudLoadTop">10dp</dimen>
+    <dimen name="panel_cloudLoadPaddingTop">30dp</dimen>
+    <dimen name="panel_cloudLoadPaddingBottom">30dp</dimen>
+    <dimen name="panel_cloudLoadBarLeft">20dp</dimen>
+    <dimen name="panel_cloudLoadBarRight">20dp</dimen>
+    <dimen name="panel_cloudLoadTitleSize">20dp</dimen>
+    <dimen name="panel_heatingTimeTop">10dp</dimen>
+    <dimen name="panel_heatingTimeTitleSize">20dp</dimen>
+    <dimen name="panel_heatingTimeHourSize">20dp</dimen>
+    <dimen name="panel_heatingTimeHourTagSize">20dp</dimen>
+    <dimen name="panel_heatingTimeMinuteSize">20dp</dimen>
+    <dimen name="panel_heatingTimeMinuteTagSize">20dp</dimen>
+    <dimen name="panel_split2Height">1dp</dimen>
+    <dimen name="panel_split2Top">10dp</dimen>
+    <dimen name="panel_cloudInfoTop">10dp</dimen>
+    <dimen name="panel_cloudInfoCityTitleSize">20dp</dimen>
+    <dimen name="panel_cloudInfoCityTempSize">40dp</dimen>
+    <dimen name="panel_cloudInfoCityTempTagSize">25dp</dimen>
+    <dimen name="panel_cloudInfoCloudTitleSize">20dp</dimen>
+    <dimen name="panel_cloudInfoCloudTempSize">40dp</dimen>
+    <dimen name="panel_cloudInfoCloudTempTagSize">25dp</dimen>
+    <dimen name="panel_reserveTop">10dp</dimen>
+    <dimen name="panel_reserveTitleSize">20dp</dimen>
+    <dimen name="panel_reserveInfoTop">10dp</dimen>
+    <dimen name="panel_reserveNoTitleSize">17dp</dimen>
+    <dimen name="panel_reserve1Size">17dp</dimen>
+    <dimen name="panel_reserve2Size">17dp</dimen>
+    <dimen name="panel_reserve3Size">17dp</dimen>
+    <dimen name="panel_opeBtnPadding">2dp</dimen>
+    <dimen name="panel_opeBtnSize">20dp</dimen>
+    <dimen name="panel_opeLLTop">30dp</dimen>
+    <dimen name="panel_opeLLPadding">5dp</dimen>
+    <dimen name="panel_opeLLPaddingBottom">10dp</dimen>
+    
+    <dimen name="set_width">200dp</dimen>
+    <dimen name="set_padding">2dp</dimen>
+    <dimen name="set_titleSize">25dp</dimen>
+    <dimen name="set_titlePadding">6dp</dimen>
+    <dimen name="set_slipHeight">2dp</dimen>
+    <dimen name="set_slipTop">2dp</dimen>
+    <dimen name="set_imgWidth">40dp</dimen>
+    <dimen name="set_imgHeight">40dp</dimen>
+    <dimen name="set_imgTitleSize">18dp</dimen>
+    <dimen name="set_imgLLTop">2dp</dimen>
+    
+    <dimen name="setpage_headPadding">10dp</dimen>
+    <dimen name="setpage_backLeft">10dp</dimen>
+    <dimen name="setpage_titleSize">25dp</dimen>
+    <dimen name="setpage_llTop">20dp</dimen>
+    <dimen name="setpage_llLeft">10dp</dimen>
+    <dimen name="setpage_llRight">10dp</dimen>
+    <dimen name="setpage_llPadding">10dp</dimen>
+    
+    <dimen name="setface_imgWidth">100dp</dimen>
+    <dimen name="setface_imgHeight">120dp</dimen>
+    <dimen name="setface_imgTop">10dp</dimen>
+    
+    <dimen name="setlink_slipHeight">2dp</dimen>
+    <dimen name="setlink_slipTop">2dp</dimen>
+    
+    <dimen name="setversion_curNameLeft">30dp</dimen>
+    <dimen name="setversion_curNameTop">10dp</dimen>
+    <dimen name="setversion_curValueLeft">30dp</dimen>
+    <dimen name="setversion_splitHeight">2dp</dimen>
+    <dimen name="setversion_splitTop">2dp</dimen>
+    <dimen name="setversion_newNameLeft">30dp</dimen>
+    <dimen name="setversion_newNameTop">10dp</dimen>
+    <dimen name="setversion_newValueLeft">30dp</dimen>
+    <dimen name="setversion_updateBtnRight">10dp</dimen>
+    <dimen name="setversion_updateBtnSize">20dp</dimen>
+    
+    <dimen name="setstart_infoSize">20dp</dimen>
+    <dimen name="setstart_btnSize">20dp</dimen>
+    <dimen name="setstart_btnLLTop">20dp</dimen>
+    <dimen name="setstart_btn2Left">20dp</dimen>
+    
+    <dimen name="setuser_editTop">5dp</dimen>
+    <dimen name="setuser_editLeft">10dp</dimen>
+    <dimen name="setuser_editRight">10dp</dimen>
+    <dimen name="setuser_btnSize">20dp</dimen>
+    <dimen name="setuser_btnBottom">5dp</dimen>
+    <dimen name="setuser_btnTop">5dp</dimen>
+    
+    <dimen name="setrefresh_titleLeft">10dp</dimen>
+    <dimen name="setrefresh_barTop">10dp</dimen>
+    <dimen name="setrefresh_btnTop">10dp</dimen>
+    <dimen name="setrefresh_btnSize">20dp</dimen>
+    
+    <dimen name="sethelp_slipHeight">2dp</dimen>
+    <dimen name="sethelp_slipTop">2dp</dimen>
+    
+    <dimen name="jsxtemp_paddingBottom">1.5dp</dimen>
+    <dimen name="jsxtemp_headPadding">10dp</dimen>
+    <dimen name="jsxtemp_headslipWidth">2dp</dimen>
+    <dimen name="jsxtemp_headslipHeight">30dp</dimen>
+    <dimen name="jsxtemp_headslipRight">5dp</dimen>
+    <dimen name="jsxtemp_headSaveSize">20dp</dimen>
+    <dimen name="jsxtemp_upTop">10dp</dimen>
+    <dimen name="jsxtemp_valueTop">10dp</dimen>
+    <dimen name="jsxtemp_downTop">10dp</dimen>
+    <dimen name="jsxtemp_valueSize">60dp</dimen>
+    <dimen name="jsxtemp_tagSize">30dp</dimen>
+    <dimen name="jsxtemp_tagPaddingBottom">15dp</dimen>
+    
+    <dimen name="yyxlist_titlePadding">10dp</dimen>
+    <dimen name="yyxlist_titleSize">20dp</dimen>
+    
+    <dimen name="shape_table_paddingLR">15dp</dimen>
+    
+    <dimen name="panel_topJSXListLLWidth">155dp</dimen>
+    <dimen name="panel_topJSXtempLLWidth">155dp</dimen>
+    <dimen name="panel_topYYXListLLWidth">155dp</dimen>
+</resources>

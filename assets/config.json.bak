@@ -1,0 +1,15 @@
+{
+	"ip":"239.255.255.250", 
+	"port":"3000", 
+	"serverType":"_HostlessWiFi._tcp.local.", 
+	"serverName":"TypeAAF-E149C2", 
+	"serverIP":"192.168.254.23",
+	"isserchAll":"0", 
+	"wifiName":"Midea-WH",
+	"cloudUrl":"http://180.169.66.202/",
+	"socketHost":"180.169.66.202",
+	"socketPort":"8089",
+	"cloudUrlForWebSocket":"http://180.169.66.202/",
+	"socketHostForWebSocket":"192.168.254.34",
+	"socketPortForWebSocket":"8089"
+}

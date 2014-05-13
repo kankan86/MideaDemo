@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_name">美的热水器</string>
+    
+    <string name="noNetworkTitle">网络连接不可用</string>
+    <string name="noNetworkBtn">查看详情</string>
+    
+    <string name="act_title1">欢迎使用美的电热水器！</string>
+    <string name="act_title2">首次使用请激活系统</string>
+    <string name="act_ipstr">请输入服务器IP</string>
+    <string name="act_textstr">请输入产品激活码</string>
+    <string name="act_btnstr">激活</string>
+    
+    <string name="wifilogin_title1">恭喜您，系统激活成功！</string>
+    <string name="wifilogin_title2">绑定您的账号</string>
+    <string name="wifilogin_newName">用户名</string>
+    <string name="wifilogin_newPassword">密码</string>
+    <string name="wifilogin_msPassword">确认密码</string>
+    <string name="wifilogin_reNamePass">记住用户名及密码</string>
+    <string name="wifilogin_linkBtn">连接</string>
+    <string name="wifilogin_regBtn">注册新账号</string>
+    <string name="wifilogin_bindBtn">绑定云账号</string>
+    
+    <string name="actcloud_title2">激活您的账号</string>
+    <string name="actcloud_newName">用户名</string>
+    <string name="actcloud_newPassword">密码</string>
+    <string name="actcloud_msPassword">确认密码</string>
+    <string name="actcloud_regBtn">注册新账号</string>
+    <string name="actcloud_actBtn">激活云账号</string>
+    
+    <string name="intlogin_loginBtn">登录</string>
+    <string name="intlogin_registerBtn">注册</string>
+    
+    <string name="wifireg_title">注册新账号</string>
+    <string name="wifireg_isnull">*</string>
+    <string name="wifireg_newName">用户名(由字母或数字构成，3~15位)：</string>
+    <string name="wifireg_newPassword">密码：</string>
+    <string name="wifireg_msPassword">确认密码：</string>
+    <string name="wifireg_cName">中文名：</string>
+    <string name="wifireg_eName">英文名：</string>
+    <string name="wifireg_phone1">手机号：</string>
+    <string name="wifireg_phone2">电话：</string>
+    <string name="wifireg_email">邮箱：</string>
+    <string name="wifireg_homeAddress">家庭地址：</string>
+    <string name="wifireg_officeAddress">办公地址：</string>
+    <string name="wifireg_submitBtn">注册</string>
+    <string name="wifireg_cancelBtn">返回</string>
+    <string name="wifireg_newName_hint">账号：</string>
+    <string name="wifireg_newPassword_hint">密码：</string>
+    <string name="wifireg_msPassword_hint">确认密码：</string>
+    <string name="wifireg_cName_hint">中文名：</string>
+    <string name="wifireg_eName_hint">英文名：</string>
+    <string name="wifireg_phone1_hint">手机号：</string>
+    <string name="wifireg_phone2_hint">电话：</string>
+    <string name="wifireg_email_hint">邮箱：</string>
+    <string name="wifireg_homeAddress_hint">家庭地址：</string>
+    <string name="wifireg_officeAddress_hint">办公地址：</string>
+    <string name="wifireg_more">***详细信息  </string>
+    
+    <string name="serverlist_myserver">我的设备</string>
+    <string name="serverlist_addserver">新增设备</string>
+    <string name="serverlist_servername">设备名</string>
+    <string name="serverlist_serveractcode">激活码</string>
+    <string name="serverlist_servercity">设备所在地</string>
+    <string name="serverlist_servername_hint">给设备取个容易记住的名字</string>
+    <string name="serverlist_serveractcode_hint">请输入设备激活码</string>
+    <string name="serverlist_savebtn">保存</string>
+    
+    <string name="panel_open">开启热水器</string>
+    <string name="panel_tempTitle1">实际</string>
+    <string name="panel_tempTitle2">温度</string>
+    <string name="panel_tempTitle3">故障</string>
+    <string name="panel_tempTitle4">信息</string>
+    <string name="panel_tempValue">26</string>
+    <string name="panel_tempTag">°C</string>
+    <string name="panel_heating">加热中</string>
+    <string name="panel_heat">保温中</string>
+    <string name="panel_heatstate0">热水器加热完毕</string>
+    <string name="panel_heatstate1">加热温度匹配中...</string>
+    <string name="panel_heatstate2">正加热至</string>
+    <string name="panel_heatstate3">75</string>
+    <string name="panel_heatstate4">°C</string>
+    <string name="panel_heatstate5">预约温度为</string>
+    <string name="panel_heatstate6">热水器使用中...</string>
+    <string name="panel_heatstate7">热水器已关机...</string>
+    <string name="panel_heatstate8">热水器保温中...</string>
+    <string name="panel_heatstate9">热水器待机中...</string>
+    <string name="panel_heatstate10">热水器有故障</string>
+    <string name="panel_hotwarter">热水量</string>
+    <string name="panel_hotwarterValue">10%</string>
+    <string name="panel_hotwarterNo">热水量不足</string>
+    <string name="panel_cloudTitle">云智能信息同步中...</string>
+    <string name="panel_cloudCityTitle">未知地区气温</string>
+    <string name="panel_cloudCityTemp">--</string>
+    <string name="panel_cloudTempTitle">云匹配温度</string>
+    <string name="panel_cloudTempValue">0</string>
+    <string name="panel_cloudTempTag">°C</string>
+    <string name="panel_heatingTimeForHeating">加热剩余时间</string>
+    <string name="panel_heatingTimeForReserve">预约剩余时间</string>
+    <string name="panel_heatingTimeHour">01</string>
+    <string name="panel_heatingTimeHourTag">小时</string>
+    <string name="panel_heatingTimeMinute">20</string>
+    <string name="panel_heatingTimeMinuteTag">分</string>
+    <string name="panel_reserveTitle">预约情况</string>
+    <string name="panel_reserveValue1">生活热水模式</string>
+    <string name="panel_reserveValue2">预约一</string>
+    <string name="panel_reserveValue3">开启</string>
+    <string name="panel_noReserveInfo">暂无预约</string>
+    <string name="panel_reserveInfo1">预约一    55°C 17:30 日一二三四五六</string>
+    <string name="panel_reserveInfo2">预约二    55°C 17:30 日一二三四五六</string>
+    <string name="panel_reserveInfo3">预约三    55°C 17:30 日一二三四五六</string>
+    <string name="panel_cloudBtn">云智能</string>
+    <string name="panel_jsxBtn">即时洗</string>
+    <string name="panel_yyxbtn">预约洗</string>
+    
+    <string name="set_title">系统设置</string>
+    <string name="set_face">更换皮肤</string>
+    <string name="set_link">接入切换</string>
+    <string name="set_version">版本更新</string>
+    <string name="set_start">出厂默认</string>
+    <string name="set_user">账户安全</string>
+    <string name="set_help">帮助说明</string>
+    <string name="set_err">故障排除</string>
+    <string name="set_refresh">刷新速率</string>
+    
+    <string name="setlink_wifi">本地控制</string>
+    <string name="setlink_3g">云端控制</string>
+    
+    <string name="version_head">版本更新</string>
+    <string name="version_foot">更新</string>
+    <string name="version_curname">当前版本：</string>
+    <string name="version_curvalue">V12&#8211;12&#8211;26</string>
+    <string name="version_newname">最新版本：</string>
+    <string name="version_newvalue">V12&#8211;12&#8211;26</string>
+    
+    <string name="setstart_info">热水器设置将恢复出厂默认值，是否继续？</string>
+    <string name="setstart_sureBtn">确定</string>
+    <string name="setstart_cancleBtn">取消</string>
+    
+    <string name="setuser_et_username">用户名：</string>
+	<string name="setuser_et_oldpass">旧密码：</string>
+	<string name="setuser_et_newpass">新密码：</string>
+	<string name="setuser_et_mspass">确认新密码：</string>
+	<string name="setuser_et_btn">修改密码</string>
+	
+	<string name="setrefresh_et">设置刷新速率：</string>
+	<string name="setrefresh_value1">低</string>
+	<string name="setrefresh_value2">中</string>
+	<string name="setrefresh_value3">高</string>
+	<string name="setrefresh_btn">保存</string>
+	
+	<string name="help_head_btn1">功能说明</string>
+    <string name="help_head_btn2">操作指南</string>
+
+    <string name="mei_di_lable">美的智能热水器</string>
+    <string name="mei_di_lable2">第一次，请先激活热水器进行控制</string>
+	<string name="mei_di_lable3">开始智能生活</string>	
+	
+	<string name="jsxtemp_save">存储</string>
+	<string name="jsxtemp_tempValue">55</string>
+	<string name="jsxtemp_tempTag">°C</string>
+	
+	<string name="yyxlist_1">预约一</string>
+	<string name="yyxlist_2">预约二</string>
+	<string name="yyxlist_3">预约三</string>
+	
+	<string name="yyxset_cancle">取消</string>
+	<string name="yyxset_save">存储</string>
+	<string name="yyxset_tempTitle">预约温度</string>
+	<string name="yyxset_timeTitle">预约时间</string>
+	<string name="yyxset_tempValue">55</string>
+	<string name="yyxset_tempTag">°C</string>
+	<string name="yyxset_hourValue">17</string>
+	<string name="yyxset_timeTag">:</string>
+	<string name="yyxset_minuteValue">30</string>
+	<string name="yyxset_info">亲，洗浴用水将在您使用前为您准备完毕!!</string>
+	<string name="yyxset_weekTitle">预约周期</string>
+	<string name="yyxset_week1">周一</string>
+	<string name="yyxset_week2">周二</string>
+	<string name="yyxset_week3">周三</string>
+	<string name="yyxset_week4">周四</string>
+	<string name="yyxset_week5">周五</string>
+	<string name="yyxset_week6">周六</string>
+	<string name="yyxset_week7">周日</string>
+	<string name="yyxset_loopWeek">每周循环</string>
+	<string name="yyxset_loopSingle">单次</string>
+</resources>

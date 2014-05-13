@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_yyxlist"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_pop_skin"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/yyxlist_RL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_table_top"
+        android:gravity="center_vertical"
+        android:padding="@dimen/yyxlist_titlePadding" >
+
+        <TextView
+            android:id="@+id/yyxlist_TV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/yyxlist_1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/yyxlist_titleSize" />
+
+        <LinearLayout
+            android:id="@+id/yyxlist_Img1LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:id="@+id/yyxlist_Img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yyxlist_RL2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_table_middle"
+        android:gravity="center_vertical"
+        android:padding="@dimen/yyxlist_titlePadding" >
+
+        <TextView
+            android:id="@+id/yyxlist_TV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/yyxlist_2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/yyxlist_titleSize" />
+
+        <LinearLayout
+            android:id="@+id/yyxlist_Img2LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:id="@+id/yyxlist_Img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yyxlist_RL3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_table_bottom"
+        android:gravity="center_vertical"
+        android:padding="@dimen/yyxlist_titlePadding" >
+
+        <TextView
+            android:id="@+id/yyxlist_TV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/yyxlist_3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/yyxlist_titleSize" />
+
+        <LinearLayout
+            android:id="@+id/yyxlist_Img3LL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:id="@+id/yyxlist_Img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

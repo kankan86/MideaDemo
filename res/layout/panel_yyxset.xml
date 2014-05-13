@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/yyxset_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head"
+        android:padding="@dimen/yyxset_headPadding" >
+
+        <LinearLayout
+            android:id="@+id/yyxset_head_slip1LL"
+            android:layout_width="@dimen/yyxset_headSlipWidth"
+            android:layout_height="@dimen/yyxset_headSlipHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/yyxset_headSlipRight"
+            android:layout_toLeftOf="@+id/yyxset_canclebtn"
+            android:background="@color/yyxset_slip" />
+
+        <TextView
+            android:id="@+id/yyxset_canclebtn"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/yyxset_headCancleRight"
+            android:layout_toLeftOf="@+id/yyxset_head_slip1LL"
+            android:background="@drawable/bg_btn_tv"
+            android:padding="5dp"
+            android:text="@string/yyxset_cancle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/yyxset_headCancleSize" />
+
+        <LinearLayout
+            android:id="@+id/yyxset_head_slip1LL"
+            android:layout_width="@dimen/yyxset_headSlipWidth"
+            android:layout_height="@dimen/yyxset_headSlipHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/yyxset_headSlipRight"
+            android:layout_toLeftOf="@+id/yyxset_savebtn"
+            android:background="@color/yyxset_slip" />
+
+        <TextView
+            android:id="@+id/yyxset_savebtn"
+            style="@style/AudioFileInfoOverlayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_tv"
+            android:padding="5dp"
+            android:text="@string/yyxset_save"
+            android:textColor="@color/white"
+            android:textSize="@dimen/yyxset_headSaveSize" />
+
+        <ImageView
+            android:id="@+id/yyxset_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/yyxset_canclebtn"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/v5_3_0_profile_arrow_back_l" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yyxset_noNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7fC4D8E6"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noNetworkInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/noNetworkTitle"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/yyxset_noNetworkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_close_green"
+            android:text="@string/noNetworkBtn" />
+    </RelativeLayout>
+
+    <meta.midea.tool.MyScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/yyxset_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_yyxset"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/yyxset_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/bg_yyxborder"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/yyxset_tempTitle"
+                        style="@style/AudioFileInfoOverlayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:paddingLeft="15dp"
+                        android:text="@string/yyxset_tempTitle"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yyxset_tempTitleSize" />
+
+                    <TextView
+                        android:id="@+id/yyxset_timeTitle"
+                        style="@style/AudioFileInfoOverlayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="25dp"
+                        android:text="@string/yyxset_timeTitle"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yyxset_timeTitleSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yyxset_info_slip1LL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/yyxset_headSlipWidth"
+                    android:background="@color/yyxset_slip" />
+
+                <LinearLayout
+                    android:id="@+id/yyxset_tempAndTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="0dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/bg_yyxborder"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/yyxset_setTempPaddingBottom"
+                        android:paddingTop="@dimen/yyxset_setTempPaddingTop" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/yyxset_tempUpBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/up" />
+
+                            <LinearLayout
+                                android:id="@+id/yyxset_tempValueLL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/yyxset_tempValue_TV"
+                                    style="@style/AudioFileInfoOverlayText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="@string/yyxset_tempValue"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/yyxset_setTempValueTVSize"
+                                    android:visibility="visible" />
+
+                                <EditText
+                                    android:id="@+id/yyxset_tempValue_ET"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_setnum"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:padding="5dp"
+                                    android:text="@string/yyxset_tempValue"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/yyxset_setTempValueEditSize"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/yyxset_tempDownBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/down" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/yyxset_temptag"
+                                style="@style/AudioFileInfoOverlayText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="@dimen/yyxset_tempTagTop"
+                                android:text="@string/yyxset_tempTag"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/yyxset_setTempTagSize" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/yyxset_info_slip2LL"
+                        android:layout_width="@dimen/yyxset_headSlipWidth"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/yyxset_slip" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yyxborder"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/yyxset_setHourPaddingBottom"
+                        android:paddingTop="@dimen/yyxset_setHourPaddingTop" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/yyxset_hourUpBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/up" />
+
+                            <LinearLayout
+                                android:id="@+id/yyxset_hourValueLL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:id="@+id/yyxset_hourValue_TV"
+                                    style="@style/AudioFileInfoOverlayText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="@string/yyxset_hourValue"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/yyxset_setHourValueTVSize" />
+
+                                <EditText
+                                    android:id="@+id/yyxset_hourValue_ET"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_setnum"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:padding="5dp"
+                                    android:text="@string/yyxset_hourValue"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/yyxset_setHourValueEditSize"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/yyxset_hourDownBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/down" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/yyxset_hourtag"
+                                style="@style/AudioFileInfoOverlayText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="@string/yyxset_timeTag"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/yyxset_setHourTagSize" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/yyxset_minuteUpBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/up" />
+
+                            <LinearLayout
+                                android:id="@+id/yyxset_minuteLL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:id="@+id/yyxset_minuteValue_TV"
+                                    style="@style/AudioFileInfoOverlayText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:text="@string/yyxset_minuteValue"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/yyxset_setMinuteValueTVSize" />
+
+                                <EditText
+                                    android:id="@+id/yyxset_minuteValue_ET"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_setnum"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:padding="5dp"
+                                    android:text="@string/yyxset_minuteValue"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/yyxset_setMinuteValueEditSize"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/yyxset_minuteDownBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/down" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yyxset_info_slip3LL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/yyxset_headSlipWidth"
+                    android:background="@color/yyxset_slip" />
+
+                <LinearLayout
+                    android:id="@+id/yyxset_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/yyxset_infoPaddingBottom"
+                    android:paddingTop="@dimen/yyxset_infoPaddingTop" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/AudioFileInfoOverlayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yyxset_info"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yyxset_infoSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yyxset_week"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/yyxset_weekPadding" >
+
+                <TextView
+                    android:id="@+id/yyxset_weekTitle"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yyxset_weekTitle"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/yyxset_weekTitleSize" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/yyxset_weekTop"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yyxweek_left"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/yyxset_week7"
+                            style="@style/AudioFileInfoOverlayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yyxset_week7"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/yyxset_weekSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yyxweek_middle"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/yyxset_week1"
+                            style="@style/AudioFileInfoOverlayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yyxset_week1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/yyxset_weekSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yyxweek_middle"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/yyxset_week2"
+                            style="@style/AudioFileInfoOverlayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yyxset_week2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/yyxset_weekSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yyxweek_middle"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/yyxset_week3"
+                            style="@style/AudioFileInfoOverlayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yyxset_week3"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/yyxset_weekSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yyxweek_middle"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/yyxset_week4"
+                            style="@style/AudioFileInfoOverlayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yyxset_week4"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/yyxset_weekSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yyxweek_middle"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/yyxset_week5"
+                            style="@style/AudioFileInfoOverlayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yyxset_week5"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/yyxset_weekSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_yyxweek_right"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/yyxset_week6"
+                            style="@style/AudioFileInfoOverlayText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yyxset_week6"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/yyxset_weekSize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yyxset_loopweekLL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/yyxset_weekLoopTop"
+                    android:background="@drawable/bg_yyxloop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/yyxset_loopweekTitle"
+                        style="@style/AudioFileInfoOverlayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/yyxset_loopWeek"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yyxset_weekLoopSize" />
+
+                    <ImageView
+                        android:id="@+id/yyxset_loopweekBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/checkbox_normal_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/yyxset_loopsingleLL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/yyxset_weekLoopTop"
+                    android:background="@drawable/bg_yyxloop"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/yyxset_loopsingleTitle"
+                        style="@style/AudioFileInfoOverlayText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/yyxset_loopSingle"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/yyxset_weekLoopSize" />
+
+                    <ImageView
+                        android:id="@+id/yyxset_loopsingleBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/checkbox_pressed" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </meta.midea.tool.MyScrollView>
+
+</LinearLayout>

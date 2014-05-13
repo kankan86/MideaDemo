@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appPage"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_skin" >
+
+    <RelativeLayout
+        android:id="@+id/panel_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/panel_headPaddingB"
+        android:paddingLeft="@dimen/panel_headPaddingL"
+        android:paddingRight="@dimen/panel_headPaddingR"
+        android:paddingTop="@dimen/panel_headPaddingT" >
+
+        <Button
+            android:id="@+id/openButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_open"
+            android:paddingBottom="@dimen/panel_openBtnPaddingB"
+            android:paddingLeft="@dimen/panel_openBtnPaddingL"
+            android:paddingRight="@dimen/panel_openBtnPaddingR"
+            android:paddingTop="@dimen/panel_openBtnPaddingT"
+            android:text="@string/panel_open"
+            android:textColor="@color/white"
+            android:textSize="@dimen/panel_openBtnSize" />
+
+        <ImageButton
+            android:id="@+id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_skin_setopenbtn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/panel_noNetwork"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panel_head"
+        android:background="#7fC4D8E6"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/noNetworkInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/noNetworkTitle"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/panel_noNetworkBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_close_green"
+            android:text="@string/noNetworkBtn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/panel_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panel_noNetwork"
+        android:layout_marginLeft="@dimen/panel_left"
+        android:layout_marginRight="@dimen/panel_right"
+        android:layout_marginTop="@dimen/panel_headAndPanel"
+        android:background="@drawable/panelbg"
+        android:padding="@dimen/panel_paddingLR" >
+
+        <ImageView
+            android:id="@+id/cloudTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cloud"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/trueTempLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/trueTempTitle1"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/panel_tempTitle1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_tempTitleSize" />
+
+                <TextView
+                    android:id="@+id/trueTempTitle2"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:text="@string/panel_tempTitle2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_tempTitleSize" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/trueTempValue"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_tempValue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_tempValueSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/trueTempTag"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_tempTag"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_tempTagSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/heatLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/heatingTagLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" >
+
+                <ImageView
+                    android:id="@+id/heatingTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sun"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/heatingProBar"
+                    style="@style/animStyleForHeating"
+                    android:layout_width="66.5dp"
+                    android:layout_height="66.5dp" >
+                </ProgressBar>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/heatingTitle"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panel_heating"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_heatingTitleSize" />
+
+                <TextView
+                    android:id="@+id/heatTitle"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panel_heat"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_heatingTitleSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stateTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/trueTempLL"
+            android:layout_marginTop="@dimen/panel_stateTagTop"
+            android:background="@drawable/bg_heatstate"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/stateTitle"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_heatstate2"
+                android:textSize="@dimen/panel_stateTempTitleSize" />
+
+            <TextView
+                android:id="@+id/stateTempValue"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_heatstate3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/panel_stateTempValueSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/stateTempTag"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_heatstate4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/panel_stateTempTagSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hotwarterLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/trueTempLL"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp" >
+
+                <TextView
+                    android:id="@+id/hotwarterTitle"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panel_hotwarter"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_hotwarterTitleSize" />
+
+                <TextView
+                    android:id="@+id/hotwarterValue"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/panel_hotwarterValue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_hotwarterValueSize" />
+
+                <TextView
+                    android:id="@+id/hotwarterNoTitle"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panel_hotwarterNo"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/panel_hotwarterTitleSize"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/hotwarterBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:max="100"
+                android:progress="10"
+                android:progressDrawable="@drawable/progressbg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slipLL1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/panel_split1Height"
+            android:layout_below="@+id/stateTag"
+            android:layout_marginTop="@dimen/panel_split1Top"
+            android:background="@color/panel_slip" />
+
+        <LinearLayout
+            android:id="@+id/cloudLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slipLL1"
+            android:layout_marginTop="@dimen/panel_cloudLoadTop"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/panel_cloudLoadPaddingBottom"
+            android:paddingTop="@dimen/panel_cloudLoadPaddingTop"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/cloudProBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/panel_cloudLoadBarLeft"
+                android:layout_marginRight="@dimen/panel_cloudLoadBarRight"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbg_cloud" />
+
+            <TextView
+                android:id="@+id/cloudTitle"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/panel_cloudTitle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_cloudLoadTitleSize" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/heatingTimeLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slipLL1"
+            android:layout_marginTop="@dimen/panel_heatingTimeTop"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/heatingTimeTitle"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/panel_heatingTimeForHeating"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_heatingTimeTitleSize" />
+
+            <TextView
+                android:id="@+id/heatingTimeHour"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/heatingTimeHourTag"
+                android:text="@string/panel_heatingTimeHour"
+                android:textColor="@color/panel_light"
+                android:textSize="@dimen/panel_heatingTimeHourSize" />
+
+            <TextView
+                android:id="@+id/heatingTimeHourTag"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/heatingTimeMinute"
+                android:text="@string/panel_heatingTimeHourTag"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_heatingTimeHourTagSize" />
+
+            <TextView
+                android:id="@+id/heatingTimeMinute"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/heatingTimeMinuteTag"
+                android:text="@string/panel_heatingTimeMinute"
+                android:textColor="@color/panel_light"
+                android:textSize="@dimen/panel_heatingTimeMinuteSize" />
+
+            <TextView
+                android:id="@+id/heatingTimeMinuteTag"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/panel_heatingTimeMinuteTag"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_heatingTimeMinuteTagSize" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/slipLL2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/panel_split2Height"
+            android:layout_below="@+id/heatingTimeLL"
+            android:layout_marginTop="@dimen/panel_split2Top"
+            android:background="@color/panel_slip" />
+
+        <RelativeLayout
+            android:id="@+id/cloudInfoLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slipLL2"
+            android:layout_marginTop="@dimen/panel_cloudInfoTop"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/cityTitle"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/panel_cloudCityTitle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_cloudInfoCityTitleSize" />
+
+            <TextView
+                android:id="@+id/cityTemp"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cityTitle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/panel_cloudCityTemp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_cloudInfoCityTempSize" />
+
+            <TextView
+                android:id="@+id/cityTempTag"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cityTitle"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/cityTemp"
+                android:text="@string/panel_cloudTempTag"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_cloudInfoCityTempTagSize" />
+
+            <TextView
+                android:id="@+id/cloudTempTitle"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/panel_cloudTempTitle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_cloudInfoCloudTitleSize" />
+
+            <TextView
+                android:id="@+id/cloudTemp"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cloudTempTitle"
+                android:layout_toLeftOf="@+id/cloudTempTag"
+                android:text="@string/panel_cloudTempValue"
+                android:textColor="@color/panel_light"
+                android:textSize="@dimen/panel_cloudInfoCloudTempSize" />
+
+            <TextView
+                android:id="@+id/cloudTempTag"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/cloudTempTitle"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/panel_cloudTempTag"
+                android:textColor="@color/panel_light"
+                android:textSize="@dimen/panel_cloudInfoCloudTempTagSize" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/reserveLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slipLL2"
+            android:layout_marginTop="@dimen/panel_reserveTop"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/reserveTitle"
+                style="@style/AudioFileInfoOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_reserveTitle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/panel_reserveTitleSize" />
+
+            <LinearLayout
+                android:id="@+id/reserveInfoLL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/panel_reserveInfoTop"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/noReserveInfo"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/panel_noReserveInfo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_reserveNoTitleSize"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/reserve1Info"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panel_reserveInfo1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_reserve1Size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/reserve2Info"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panel_reserveInfo2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_reserve2Size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/reserve3Info"
+                    style="@style/AudioFileInfoOverlayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/panel_reserveInfo3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/panel_reserve3Size"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_opeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/panel_panel"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/panel_opeLLPaddingBottom"
+        android:paddingLeft="@dimen/panel_opeLLPadding"
+        android:paddingRight="@dimen/panel_opeLLPadding"
+        android:paddingTop="@dimen/panel_opeLLPadding" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/panel_opeBtnPadding" >
+
+            <Button
+                android:id="@+id/cloudBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_normal"
+                android:text="@string/panel_cloudBtn"
+                android:textSize="@dimen/panel_opeBtnSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/panel_opeBtnPadding" >
+
+            <Button
+                android:id="@+id/jsxBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_normal"
+                android:text="@string/panel_jsxBtn"
+                android:textSize="@dimen/panel_opeBtnSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/panel_opeBtnPadding" >
+
+            <Button
+                android:id="@+id/yyxBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_normal"
+                android:text="@string/panel_yyxbtn"
+                android:textSize="@dimen/panel_opeBtnSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_jsxLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/panel_opeBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/panel_LLBottom"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <include
+            android:id="@+id/jsxLL"
+            android:layout_width="@dimen/panel_topJSXListLLWidth"
+            android:layout_height="fill_parent"
+            layout="@layout/panel_jsxlist" />
+
+        <include
+            android:id="@+id/jsxTempLL"
+            android:layout_width="@dimen/panel_topJSXtempLLWidth"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dp"
+            layout="@layout/panel_jsxtemp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panel_yyxLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/panel_opeBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/panel_LLBottom"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <include
+            android:id="@+id/yyxLL"
+            android:layout_width="@dimen/panel_topYYXListLLWidth"
+            android:layout_height="fill_parent"
+            layout="@layout/panel_yyxlist" />
+    </LinearLayout>
+
+</RelativeLayout>

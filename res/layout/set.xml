@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/set_width"
+    android:layout_height="fill_parent"
+    android:background="@color/setBack"
+    android:orientation="vertical"
+    android:padding="@dimen/set_padding" >
+
+    <TextView
+        android:id="@+id/reserveOpenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/set_titleSize"
+        android:padding="@dimen/set_titlePadding" />
+
+    <LinearLayout
+        android:id="@+id/set_slipLL1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/set_slipHeight"
+        android:layout_marginTop="@dimen/set_slipTop"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/panel_headAndPanel"
+        android:background="@drawable/bg_setll"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/setFaceLL" >
+
+            <ImageView
+                android:id="@+id/setFaceImg"
+                android:layout_width="@dimen/set_imgWidth"
+                android:layout_height="@dimen/set_imgHeight"
+                android:layout_weight="1"
+                android:src="@drawable/btn_setface" />
+
+            <TextView
+                android:id="@+id/setFaceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_face"
+                android:textColor="@color/black"
+                android:textSize="@dimen/set_imgTitleSize" />
+
+            <ImageView
+                android:id="@+id/setFaceBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_slipLL2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/set_slipHeight"
+            android:layout_marginTop="@dimen/set_slipTop"
+            android:background="@color/panel_slip" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/set_imgLLTop"
+            android:gravity="center"
+            android:id="@+id/setLinkLL"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/setLinkImg"
+                android:layout_width="@dimen/set_imgWidth"
+                android:layout_height="@dimen/set_imgHeight"
+                android:layout_weight="1"
+                android:src="@drawable/btn_setlink" />
+
+            <TextView
+                android:id="@+id/setLinkTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_link"
+                android:textColor="@color/black"
+                android:textSize="@dimen/set_imgTitleSize" />
+
+            <ImageView
+                android:id="@+id/setLinkBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_slipLL2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/set_slipHeight"
+            android:layout_marginTop="@dimen/set_slipTop"
+            android:background="@color/panel_slip"
+            android:visibility="gone" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/set_imgLLTop"
+            android:gravity="center"
+            android:id="@+id/setVersionLL" >
+
+            <ImageView
+                android:id="@+id/setVersionImg"
+                android:layout_width="@dimen/set_imgWidth"
+                android:layout_height="@dimen/set_imgHeight"
+                android:layout_weight="1"
+                android:src="@drawable/btn_setversion" />
+
+            <TextView
+                android:id="@+id/setVersionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_version"
+                android:textColor="@color/black"
+                android:textSize="@dimen/set_imgTitleSize" />
+
+            <ImageView
+                android:id="@+id/setVersionBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/set_imgLLTop"
+        android:background="@drawable/bg_setll"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/setStartLL"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/setStartImg"
+                android:layout_width="@dimen/set_imgWidth"
+                android:layout_height="@dimen/set_imgHeight"
+                android:layout_weight="1"
+                android:src="@drawable/btn_setstart" />
+
+            <TextView
+                android:id="@+id/setStartTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/set_imgTitleSize" />
+
+            <ImageView
+                android:id="@+id/setStartBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_slipLL2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/set_slipHeight"
+            android:layout_marginTop="@dimen/set_slipTop"
+            android:background="@color/panel_slip"
+            android:visibility="gone" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/set_imgLLTop"
+            android:gravity="center"
+            android:id="@+id/setUserLL" >
+
+            <ImageView
+                android:id="@+id/setUserImg"
+                android:layout_width="@dimen/set_imgWidth"
+                android:layout_height="@dimen/set_imgHeight"
+                android:layout_weight="1"
+                android:src="@drawable/btn_setuser" />
+
+            <TextView
+                android:id="@+id/setUserTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_user"
+                android:textColor="@color/black"
+                android:textSize="@dimen/set_imgTitleSize" />
+
+            <ImageView
+                android:id="@+id/setUserBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/set_imgLLTop"
+        android:background="@drawable/bg_setll"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/setRefreshLL"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/setRefreshImg"
+                android:layout_width="@dimen/set_imgWidth"
+                android:layout_height="@dimen/set_imgHeight"
+                android:layout_weight="1"
+                android:src="@drawable/btn_setrefresh" />
+
+            <TextView
+                android:id="@+id/setRefreshTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_refresh"
+                android:textColor="@color/black"
+                android:textSize="@dimen/set_imgTitleSize" />
+
+            <ImageView
+                android:id="@+id/setRefreshBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_slipLL2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/set_slipHeight"
+            android:layout_marginTop="@dimen/set_slipTop"
+            android:background="@color/panel_slip"
+            android:visibility="gone" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/set_imgLLTop"
+            android:gravity="center"
+            android:id="@+id/setHelpLL" >
+
+            <ImageView
+                android:id="@+id/setHelpImg"
+                android:layout_width="@dimen/set_imgWidth"
+                android:layout_height="@dimen/set_imgHeight"
+                android:layout_weight="1"
+                android:src="@drawable/btn_sethelp" />
+
+            <TextView
+                android:id="@+id/setHelpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_help"
+                android:textColor="@color/black"
+                android:textSize="@dimen/set_imgTitleSize" />
+
+            <ImageView
+                android:id="@+id/setHelpBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/set_slipLL2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/set_slipHeight"
+            android:layout_marginTop="@dimen/set_slipTop"
+            android:background="@color/panel_slip" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/set_imgLLTop"
+            android:gravity="center"
+            android:id="@+id/setErrLL" >
+
+            <ImageView
+                android:id="@+id/setErrImg"
+                android:layout_width="@dimen/set_imgWidth"
+                android:layout_height="@dimen/set_imgHeight"
+                android:layout_weight="1"
+                android:src="@drawable/btn_seterror" />
+
+            <TextView
+                android:id="@+id/setErrTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_err"
+                android:textColor="@color/black"
+                android:textSize="@dimen/set_imgTitleSize" />
+
+            <ImageView
+                android:id="@+id/setErrBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/v5_3_0_profile_arrow_back" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
